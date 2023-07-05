@@ -30,8 +30,28 @@ const filterMethod = () => {
     console.log(filteredUsers);
 }
 
+// ================================    find Filter ===============================
 
 
+
+const findMethod = () => {
+    let email = document.getElementById("email").value
+if (!email) {
+    alert("Entered your email")
+    return 
+}
+
+    let user = users.find((user,index) => {
+        return user.email === email
+    })
+        console.log(user);
+    if (user) {
+        alert("you are added in this foam")
+    }
+    
+    
+    return
+}
 
 // for (let i = 0; i < users.length; i++) {
 
