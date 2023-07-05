@@ -6,7 +6,8 @@ const users = [
     {name:"Ghullam Mujtaba", city:"Faisalabad", age:14, email:"ghullammujtaba@gmail.com", status : "active",  id: "1234567"},
     {name:"Habib", city:"Faisalabad", age:17, email:"habib@gmail.com", status : "inactive",  id: "12345678"},
     {name:"Haseeb", city:"Faisalabad", age:16, email:"haseeb@gmail.com", status : "active",  id: "123456789"},
-    {name:"Muneeb", city:"Faisalabad", age:15, email:"muneeb@gmail.com", status : "inactive",  id: "1234567890"}
+    {name:"Muneeb", city:"Faisalabad", age:15, email:"muneeb@gmail.com", status : "inactive",  id: "1234567890"},
+    {name:"Muneeb", city:"Faisalabad", age:15, email:"muneeb@gmail.com", status : "processing",  id: "1234567890"}
 ]
 
 
@@ -19,9 +20,15 @@ const mapMethod = () => {
     console.log(newUsers);
 }
 
+// ===============================    filter method ============================
 
+const filterMethod = () => {
+    let filteredUsers =  users.filter((user,index)=>{
+        return user.age <= 18
+    })
 
-
+    console.log(filteredUsers);
+}
 
 
 
