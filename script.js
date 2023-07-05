@@ -8,23 +8,46 @@ const users = [
     {name:"Haseeb", city:"Faisalabad", age:16, email:"haseeb@gmail.com", status : "active",  id: "123456789"},
     {name:"Muneeb", city:"Faisalabad", age:15, email:"muneeb@gmail.com", status : "inactive",  id: "1234567890"}
 ]
+
+
+// ============================== mapmethod  =============================      
+
+const mapMethod = () => {
+  let newUsers =  users.map( (user , index) => {
+        return user.age * 2
+    })
+    console.log(newUsers);
+}
+
+
+
+
+
+
+
+
 // for (let i = 0; i < users.length; i++) {
 
 //     console.log(users[i]);
 // }
 
-for ( let user of users) {
-    // console.log(user.id);`
-        for ( let property in user)
-        console.log(property + "=>"+ user[property]);
-}
+// for ( let user of users) {
+//     // console.log(user.id);`
+//         for ( let property in user)
+//         console.log(property + "=>"+ user[property]);
+// }
 
 // function sayHellow(){return " Hellow Mustafa"
 // }
 
+// ==================  arrow function =================
+
 const sayHellow = name => " Hellow " + name
 
 console.log(sayHellow("Mustafa"));
+
+
+
 // let singleUser = users[0];
 
 // for( let property in singleUser){
